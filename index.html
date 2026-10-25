@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Página Viva — Livraria</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header id="header" class="header"></header>
+
+  <main id="main" class="main">
+    <section id="view-catalog"></section>
+    <section id="view-checkout" hidden></section>
+    <section id="view-success" hidden></section>
+  </main>
+
+  <div id="overlay" class="overlay" hidden></div>
+  <aside id="cart" class="drawer" aria-hidden="true" aria-label="Carrinho"></aside>
+  <div id="modal" class="modal" hidden></div>
+  <div id="toast" class="toast" aria-live="polite"></div>
+  <footer id="demo" class="demo"></footer>
+
+  <!-- Ponto de entrada: os imports (main → Controller → Models/Views → core) ficam nos próprios módulos -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
